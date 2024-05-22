@@ -60,7 +60,6 @@ export async function updateBooking(id, obj) {
     .select()
     .single();
 
-  console.log(data, error);
   if (error) {
     console.error(error);
     throw new Error("Booking could not be updated");
