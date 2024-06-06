@@ -82,7 +82,7 @@ export async function updateCurrentUser({ password, fullName, avatar }) {
     });
 
   if (updateError) {
-    throw new Error(error.message);
+    throw new Error(updateError.message);
   }
 
   return updatedUser;
